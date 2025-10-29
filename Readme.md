@@ -1,26 +1,18 @@
-Lead‑Desafio
-🧾 Visão geral
+# Lead‑Desafio
 
-Este repositório contém a implementação concluída do desafio para a empresa DTI Digital. 
-GitHub
+## 🧾 Visão geral  
+Este repositório contém a implementação concluída do desafio para a empresa DTI Digital.  
+O projeto engloba uma API em C# (ASP.NET Core) e uma parte front‑end em JavaScript/HTML/CSS, para gerenciar leads (potenciais clientes).
 
-O projeto engloba uma API em C# (provavelmente ASP.NET Core) e uma parte front‑end em JavaScript/HTML/CSS, para gerenciar “leads” (potenciais clientes) ou “leads manager”.
+## 🚀 Tecnologias utilizadas  
+- Back‑end: C# / ASP.NET Core  
+- Front‑end: JavaScript, HTML, CSS  
+- Banco de dados: SQLite (`leadmanager.db`)  
+- Configuração: `appsettings.json`, `appsettings.Development.json`  
+- Testes de API: `LeadManagerAPI.http`  
+- Estrutura de pastas: `LeadManagerAPI/`, `Properties/`, `wwwroot/`
 
-🚀 Tecnologias utilizadas
-
-Back‑end: C# / ASP.NET Core (arquivo LeadManagerAPI.csproj)
-
-Front‑end: JavaScript, HTML, CSS
-
-Banco de dados: arquivo leadmanager.db sugere uso de SQLite ou similar
-
-Configuração: arquivos appsettings.json, appsettings.Development.json
-
-API testing: LeadManagerAPI.http (provavelmente via HTTP client ou VSCode REST Client)
-
-Estrutura de pastas: LeadManagerAPI/, Properties/, wwwroot/ 
-GitHub
-
+## 📁 Estrutura do projeto  
 📁 Estrutura do projeto
 Lead‑Desafio/
 │
