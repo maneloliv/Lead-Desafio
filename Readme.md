@@ -41,8 +41,8 @@ O projeto engloba uma API em C# (ASP.NET Core) e uma parte front‑end em JavaSc
    ou
    dotnet run --urls "http://localhost:5000
    ```
-A API estará disponível em http://localhost:<porta> (verifique o terminal ou appsettings.json).
-6.Abra o front‑end: acesse wwwroot/index.html via browser ou configure para servir via a API.
+A API estará disponível em http://localhost:5000
+Caso queira analisar o backend acesse: <a>http://localhost:5000/swagger/index.html</a>
 
 ✅ Funcionalidades principais
 
