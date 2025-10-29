@@ -12,51 +12,29 @@ O projeto engloba uma API em C# (ASP.NET Core) e uma parte front‑end em JavaSc
 - Testes de API: `LeadManagerAPI.http`  
 - Estrutura de pastas: `LeadManagerAPI/`, `Properties/`, `wwwroot/`
 
-## 📁 Estrutura do projeto  
-📁 Estrutura do projeto
-Lead‑Desafio/
-│
-├─ LeadManagerAPI/
-│   ├─ LeadManagerAPI.csproj
-│   ├─ appsettings.json
-│   ├─ appsettings.Development.json
-│   ├─ LeadManagerAPI.http
-│   └─ … outros arquivos de API
-│
-├─ Properties/
-│   └─ … configuração de projeto
-│
-├─ wwwroot/
-│   └─ … arquivos estáticos para front‑end
-│
-├─ leadmanager.db
-├─ .gitignore
-└─ … outros arquivos
-
 🛠 Como rodar localmente
 
-Clone o repositório:
 
-git clone https://github.com/maneloliv/Lead‑Desafio.git
+## 🛠 Como rodar localmente  
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/maneloliv/Lead-Desafio.git
 
 
-No diretório LeadManagerAPI/, restaure os pacotes e compile a API (assumindo uso de dotnet CLI):
-
+2. No diretório LeadManagerAPI/, restaure os pacotes e compile a API:
 cd LeadManagerAPI
 dotnet restore
 dotnet build
 
+3.Certifique-se de que leadmanager.db está acessível.
 
-Configure o banco de dados ou assegure que leadmanager.db está acessível.
+4.Execute a API:
 
-Execute a API:
+-dotnet run
 
-dotnet run
+A API estará disponível em http://localhost:<porta> (verifique o terminal ou appsettings.json).
 
-
-A API estará disponível em http://localhost:<porta> (ver no appsettings.json ou saída do terminal).
-
-Abra o front‑end: acesse wwwroot/index.html via browser ou configure para servir via a API.
+5.Abra o front‑end: acesse wwwroot/index.html via browser ou configure para servir via a API.
 
 ✅ Funcionalidades principais
 
@@ -68,27 +46,9 @@ Banco de dados local
 
 Configurações diferenciadas para ambiente de desenvolvimento
 
-🤝 Como contribuir
-
-Se você quiser ajudar a melhorar este projeto:
-
-Fork este repositório.
-
-Crie uma nova branch: git checkout ‑b feature/minha‑nova‑funcionalidade.
-
-Faça suas modificações.
-
-Submeta um pull request com descrição clara da funcionalidade ou correção.
-
-Certifique‑se de que está funcionando em ambiente local e que não quebra funcionalidades existentes.
-
-📋 Licença
-
-Este projeto usa a licença MIT (ou especifique outra que for aplicável). Se nenhuma estiver definida, você pode adicionar um arquivo LICENSE com os termos.
 
 📝 Notas finais
 
 Este desafio foi concluído para a empresa DTI, conforme indicado no repositório. 
 GitHub
 
-Se houver instruções específicas adicionais (ex: variáveis de ambiente, dependências extras, deploy em produção), adicione‑as nesta seção.
