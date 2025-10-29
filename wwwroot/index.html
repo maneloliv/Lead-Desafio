@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leads — Lista</title>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=2"/>
+</head>
+<body>
+  <div class="wrap" role="main" aria-label="Lista de leads">
+    <div class="tabs" role="tablist" aria-label="Filtrar listas">
+      <button class="tab active" data-tab="invited" role="tab" aria-selected="false">Invited</button>
+      <button class="tab" data-tab="accepted" role="tab" aria-selected="true">Accepted</button>
+      <div style="margin-left:auto;color:var(--muted);align-self:center;font-size:13px">Mostrando: <strong id="showCount" style="color:#111827;margin-left:6px">0</strong></div>
+    </div>
+
+    <div class="panel">
+      <div id="loading">Carregando leads…</div>
+      <div id="list" class="list" aria-live="polite"></div>
+      <div id="emptyMessage" class="card" style="display:none;color:var(--muted);text-align:center">
+        Nenhum lead encontrado.
+      </div>
+    </div>
+  </div>
+  <!-- botao Flutuante -->
+  <button class="floating-btn" id="floatingBtn">
+      <i class="fas fa-plus"></i>
+  </button>
+
+  <!-- pop-up -->
+  <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content">
+          <div class="popup-header">
+              <h2>Adicionar Novo Lead</h2>
+              <button class="close-btn" id="closeBtn">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          
+          <div class="popup-body">
+              <form id="leadForm">
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="contactFirstName" required placeholder="Nome*">
+                  </div>
+                  
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="contactLastName" required placeholder="Sobrenome*">
+                  </div>
+                  
+                  <div class="form-group">
+                      <input type="email" class="form-control" id="email" required placeholder="Email*">
+                  </div>
+                  
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="suburb" required placeholder="Cidade*">
+                  </div>
+                  
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="category" required placeholder="Categoria*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Phone" pattern="\d{11}" maxlength="11"  placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control" id="description" rows="3" required placeholder="Descrição*"></textarea >
+                  </div>
+                  <div class="form-group">
+                      <input type="number" class="form-control" id="price" step="0.01" min="0" placeholder="Preço">
+                  </div>
+                  
+                  <button type="submit" class="submit-btn">Adidcionar Lead</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Pastas de build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Pacotes NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Logs e caches
+*.log
+/TestResults/
+out/
