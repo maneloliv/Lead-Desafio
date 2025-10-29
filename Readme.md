@@ -16,26 +16,33 @@ O projeto engloba uma API em C# (ASP.NET Core) e uma parte front‑end em JavaSc
 
 
 ## 🛠 Como rodar localmente  
-1. Clone o repositório:  
+
+1.Instalar o SDK do .NET 9.0
+
+   Acesse: https://aka.ms/dotnet/download
+   
+   Baixe e instale o .NET 9.0 SDK.
+   
+2. Clone o repositório:  
    ```bash
    git clone https://github.com/maneloliv/Lead-Desafio.git
    ```
-
-2. No diretório LeadManagerAPI/, restaure os pacotes e compile a API:
+3. No diretório LeadManagerAPI/, restaure os pacotes e compile a API:
    ```bash
    -cd LeadManagerAPI
    -dotnet restore
    -dotnet build
    ```
+4.Certifique-se de que leadmanager.db está acessível.
 
-3.Certifique-se de que leadmanager.db está acessível.
-
-4.Execute a API:
+5.Execute a API:
    ```bash
    -dotnet run
+   ou
+   dotnet run --urls "http://localhost:5000
    ```
 A API estará disponível em http://localhost:<porta> (verifique o terminal ou appsettings.json).
-5.Abra o front‑end: acesse wwwroot/index.html via browser ou configure para servir via a API.
+6.Abra o front‑end: acesse wwwroot/index.html via browser ou configure para servir via a API.
 
 ✅ Funcionalidades principais
 
