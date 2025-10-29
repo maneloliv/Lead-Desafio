@@ -21,11 +21,11 @@ O projeto engloba uma API em C# (ASP.NET Core) e uma parte front‑end em JavaSc
    git clone https://github.com/maneloliv/Lead-Desafio.git
 
 
-2. No diretório LeadManagerAPI/, restaure os pacotes e compile a API:
- 
-   cd LeadManagerAPI
-   dotnet restore
-   dotnet build
+##2. No diretório LeadManagerAPI/, restaure os pacotes e compile a API:
+   
+   -cd LeadManagerAPI
+   -dotnet restore
+   -dotnet build
 
 3.Certifique-se de que leadmanager.db está acessível.
 
