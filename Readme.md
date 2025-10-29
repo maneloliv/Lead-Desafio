@@ -42,11 +42,11 @@ O projeto engloba uma API em C# (ASP.NET Core) e uma parte front‑end em JavaSc
    dotnet run --urls "http://localhost:5000
    ```
 A API estará disponível em http://localhost:5000
-Caso queira analisar o backend acesse: <a>http://localhost:5000/swagger/index.html</a>
+Caso queira analisar o backend acesse: http://localhost:5000/swagger/index.html
 
 ✅ Funcionalidades principais
 
-Gerenciamento de leads — criação, leitura, atualização, deleção (CRUD)
+Gerenciamento de leads — criação, leitura, atualização.
 
 Interface web simples para interação com a API
 
@@ -58,5 +58,4 @@ Configurações diferenciadas para ambiente de desenvolvimento
 📝 Notas finais
 
 Este desafio foi concluído para a empresa DTI, conforme indicado no repositório. 
-GitHub
 
